@@ -1,11 +1,15 @@
 import React from 'react';
-
-import './App.css';
+import './css/App.css';
+import Sidebar from './components/Sidebar';
+import Feed from './components/Feed';
+import Widgets from './components/Widgets';
 
 function App() {
   return (
-    <div>
-      <h2>Twitter Application</h2>
+    <div className="app">
+        <Sidebar />
+        <Feed />
+        <Widgets />
     </div>
   );
 }
